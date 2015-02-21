@@ -1,0 +1,81 @@
+body { background: #372d3b; padding: 100px 0; margin: 0 }
+header { height: 50px; line-height: 50px;  width:100%; position: fixed; top: 0; z-index: 999; background: #4f3043; color:#ffffde; padding: 0 20px; border-bottom: 1px solid #000; text-transform: uppercase; font-family: "Arial", sans-serif }
+header a { color: #ffffde; text-decoration: none }
+header a img { float: right; margin: 10px 50px }
+
+#container {
+    width: 960px;
+    height: 500px;
+    position: relative;
+    margin: 50px auto;
+}
+#slider {
+    width: 960px;
+    height: 500px;
+    position: absolute;
+    overflow: hidden;
+}
+#next {
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    z-index: 999;
+    top: 225px;
+    right: 0;
+    line-height: 50px;
+    /*font-size: 30px;*/
+    background-color: #000000;
+    color: #ffffff;
+    text-align: center;
+    cursor: pointer;
+    opacity: 0;
+}
+#prev {
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    z-index: 999;
+    top: 225px;
+    left: 0;
+    line-height: 50px;
+    /*font-size: 30px;*/
+    background-color: #000000;
+    color: #ffffff;
+    text-align: center;
+    cursor: pointer;
+    opacity: 0;
+}
+#container:hover #next {
+    opacity: 1;
+    transition: all .3s ease-out;
+    -webkit-transition: all .3s ease-out;
+}
+#container:hover #prev {
+    opacity: 1;
+    transition: all .3s ease-out;
+    -webkit-transition: all .3s ease-out;
+}
+#pager {
+    width: 100%;
+    text-align: center;
+    display: block;
+    position: absolute;
+    cursor: pointer;
+    z-index: 999;
+    bottom:0;
+}
+#pager a {
+    font-size: 0px;
+    color: transparent;
+    width: 10px;
+    height: 10px;
+    display: inline-block;
+    position: relative;
+    border: 1px solid #000;
+    border-radius: 20px;
+    background: transparent;
+    margin: 10px;
+}           
+#pager a.activeSlide {
+    background: #000
+}    
